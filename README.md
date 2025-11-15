@@ -15,7 +15,7 @@ This project is designed to run in a standard Kaggle Notebook environment.
 * **Accelerator:** GPU (P100, T4, or similar)
 * **Internet:** Must be **ON** (to allow `timm` to download the pre-trained `MobileNetV3` model).
 
-## 🏃 How to Run
+# 🏃 How to Run
 
 1.  Create a new Kaggle Notebook.
 2.  Set the Accelerator to **GPU** and turn **Internet ON** in the notebook's settings.
@@ -25,11 +25,11 @@ This project is designed to run in a standard Kaggle Notebook environment.
 4.  Copy the entire Python script into a single cell in the notebook.
 5.  Run the cell to start training.
 
-## ⚙️ Configuration
+# ⚙️ Configuration
 
 All training parameters are controlled by the `Config` class at the top of the script. You can easily toggle between a fast debug run and a full training run.
 
-### Fast Debug Run (10-15 Minutes)
+# Fast Debug Run (10-15 Minutes)
 
 To test the entire pipeline on 30 samples for 10 epochs, use these settings:
 
@@ -55,7 +55,7 @@ This project is designed to run in a standard Kaggle Notebook environment.
 * **Accelerator:** GPU (P100, T4, or similar)
 * **Internet:** Must be **ON**
 
-## 🏃 How to Run
+# 🏃 How to Run
 
 1.  Create a new Kaggle Notebook.
 2.  Set the Accelerator to **GPU** and turn **Internet ON** in the notebook's settings.
