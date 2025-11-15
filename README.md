@@ -6,7 +6,8 @@ This repository contains the code for a lightweight, 2D multimodal approach to d
 
 Intracranial aneurysms affect ~3% of the global population and their rupture causes approximately 500,000 deaths annually. Up to half are only diagnosed after rupture, leading to severe morbidity and mortality. The manual review of 3D scans is time-consuming and subject to human error due to the small size and complex location of aneurysms. An automated, accurate detection system can enable early intervention, fundamentally transforming patient prognosis and saving lives.
 
-## 🚀 Environment & Setup (This is for mobilenetv3)
+## 🚀 Environment & Setup 
+**1.This is for mobilenetv3**
 
 This project is designed to run in a standard Kaggle Notebook environment.
 
@@ -40,7 +41,12 @@ class Config:
     MODEL_NAME_BACKBONE = "mobilenetv3_large_100" 
     
     # --- SETTINGS FOR FAST DEBUG RUN ---
+
+
     NUM_EPOCHS = 10         
     NUM_FOLDS = 1           # Runs a single 80/20 train/val split
     USE_GROUP_CV = False    # Uses fast StratifiedKFold (skips slow DICOM reading)
     DEBUG_SAMPLE_SIZE = 30  # Uses only 30 scans
+
+**2.This is for DenseNet**
+ 
