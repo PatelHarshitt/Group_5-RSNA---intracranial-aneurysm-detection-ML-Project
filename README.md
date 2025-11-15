@@ -6,21 +6,6 @@ This repository contains the code for a lightweight, 2D multimodal approach to d
 
 Intracranial aneurysms affect ~3% of the global population and their rupture causes approximately 500,000 deaths annually. Up to half are only diagnosed after rupture, leading to severe morbidity and mortality. The manual review of 3D scans is time-consuming and subject to human error due to the small size and complex location of aneurysms. An automated, accurate detection system can enable early intervention, fundamentally transforming patient prognosis and saving lives.
 
-## ✨ Key Features
-
-This project's novelty comes from its lightweight and efficient design, which contrasts with traditional 3D segmentation approaches.
-
-1.  **Novel 3D-to-2D Feature Projection:** We compress the 3D scan data into a single 3-channel 2D image. This allows a powerful, pre-trained 2D model to "see" 3D spatial and intensity relationships without the massive overhead of a 3D CNN. The channels are:
-    * **Channel 1:** Middle Slice (Spatial Snapshot)
-    * **Channel 2:** Max Intensity Projection (MIP) (Highlights bright structures)
-    * **Channel 3:** Standard Deviation Projection (Highlights areas of variance)
-
-2.  **Lightweight Multimodal Architecture:** The `ImprovedMultiFrameModel` fuses the deep-learned image features from the `MobileNetV3` backbone with tabular patient metadata (`PatientAge` and `PatientSex`) to make a more context-aware decision.
-
-3.  **Custom Dual-Objective Loss Function:** We use an `ImprovedLoss` which is a weighted combination of **Weighted BCE Loss** (to heavily weight the "Aneurysm Present" class) and **Focal Loss** (to focus on hard-to-classify examples).
-
-4.  **Robust Dual-Path Data Pipeline:** The `EightFrameDataset` is built to run fast by reading pre-processed PNGs, but includes a robust fallback to load and process raw DICOMs on the fly if PNGs are not found.
-
 ## 🚀 Environment & Setup
 
 This project is designed to run in a standard Kaggle Notebook environment.
