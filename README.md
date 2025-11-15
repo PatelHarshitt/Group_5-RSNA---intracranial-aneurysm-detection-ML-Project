@@ -1,4 +1,4 @@
-# Group_5-RSNA---intracranial-aneurysm-detection-ML-Project
+## Group_5-RSNA---intracranial-aneurysm-detection-ML-Project
 
 This repository contains the code for a lightweight, 2D multimodal approach to detecting intracranial aneurysms for the RSNA 2025 competition. Instead of relying on computationally expensive 3D segmentation models, this project uses a novel 3D-to-2D feature projection technique to train an efficient 2D classifier.
 
