@@ -47,6 +47,22 @@ class Config:
     NUM_FOLDS = 1           # Runs a single 80/20 train/val split
     USE_GROUP_CV = False    # Uses fast StratifiedKFold (skips slow DICOM reading)
     DEBUG_SAMPLE_SIZE = 30  # Uses only 30 scans
-
+```
 **2.This is for DenseNet**
+This project is designed to run in a standard Kaggle Notebook environment.
+
+* **Platform:** Kaggle Notebooks
+* **Accelerator:** GPU (P100, T4, or similar)
+* **Internet:** Must be **ON**
+
+## 🏃 How to Run
+
+1.  Create a new Kaggle Notebook.
+2.  Set the Accelerator to **GPU** and turn **Internet ON** in the notebook's settings.
+3.  Add the following two datasets:
+    * `rsna-intracranial-aneurysm-detection` (The official competition data)
+    * `rsna-iad-trained-models`
+4.  Copy the entire Python script into a single cell in the notebook.
+5.  Run the cell to start training.
+
  
