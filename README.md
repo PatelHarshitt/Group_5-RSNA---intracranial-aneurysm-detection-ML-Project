@@ -48,7 +48,7 @@ class Config:
     USE_GROUP_CV = False    # Uses fast StratifiedKFold (skips slow DICOM reading)
     DEBUG_SAMPLE_SIZE = 30  # Uses only 30 scans
 ```
-## 2.This is for DenseNet
+## 2.This is for 2.5D Classifier
 This project is designed to run in a standard Kaggle Notebook environment.
 
 * **Platform:** Kaggle Notebooks
